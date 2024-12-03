@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strona</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Strona</h1>
+  <hr>
+  <p id="description">Formularz</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Imię: <input class="klasa" placeholder="wpisz imię" id="name" name="imie" required type="text" /></label>
+    <label id="email-label" for="email">E-mail: <input class="klasa" placeholder="wpisz email" id="email" name="imejl" required type="email" /></label>
+    <label id="number-label" for="number">Wiek: <input class="klasa" placeholder="podaj wiek" id="number" min="16" max="100" name="liczba" type="number" /></label>
+    <label>Wybierz ulubiony sport: <select id="dropdown">
+      <option>Piłka nożna</option>
+      <option>Koszykówka</option>
+    </select>
+    </label>
+    <label>
+      <p id="plecik">Wybierz płeć:</p>
+      <label for="plec1"><input id="plec1" type="radio" name="plec" value="men" /> Mężczyzna</label>
+      <label for="plec2"><input id="plec2" type="radio" name="plec" value="women" /> Kobieta</label>
+    </label>
+    <label>
+      <quote>Jaki rodzaj muzyki jest Twoim ulubionym?</quote>
+      <label for="1check"><input id="1check" type="checkbox" value="reggae" /> Reggae</label>
+      <label for="2check"><input id="2check" type="checkbox" value="rap" /> Rap</label>
+    </label>
+    <label id="area1" for="area">
+      <p id="blok">Własny opis</p>
+      <textarea placeholder="Opisz siebie..." id="area"></textarea>
+    </label>
+    <input class="podsum1" type="reset" value="Reset" />
+    <input class="podsum2" id="submit" type="submit" value="Prześlij" />
+    <hr>
+    <footer>
+      <p id="stopka">Author Krystian Guzek</p>
+    </footer>
+</body>
+</html>
